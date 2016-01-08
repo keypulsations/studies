@@ -78,28 +78,14 @@ Pseq([
   (instrument: \gendrify, cps: 04, dur: 20, freq: 4, melMul: 1, melFadeInTime: 16, delta: 16),
   (instrument: \gendrify, cps: 08, dur: 10, freq: 4, melMul: 1.5, delta: 8),
   (instrument: \gendrify, cps: 16, dur: 10, freq: 4, melMul: 2, delta: 8),
+  (instrument: \gendrify, cps: 20, dur: 10, freq: 4, melMul: 2.25, delta: 8),
+  (instrument: \gendrify, cps: 24, dur: 10, freq: 4, melMul: 2.5, delta: 8),
   (instrument: \gendrify, cps: 16, dur: 10, freq: 4, melMul: 2, xNote: 22, bpfMul: 0, gendyMul: 0, delta: 8),
   (instrument: \gendrify, cps: 02, dur: 10, freq: 4, melMul: 2, xNote: 20, kickMul: 1.25, delta: 8),
   (instrument: \gendrify, cps: 02, dur: 10, freq: 4, melMul: 2, xNote: 19, kickMul: 1.25, delta: 8),
   (instrument: \gendrify, cps: 02, dur: 10, freq: 4, melMul: 2, xNote: 17, kickMul: 1.25, delta: 8),
-  (instrument: \gendrify, cps: 02, dur: 10, freq: 4, melMul: 2, xNote: 15, kickMul: 1.25, delta: 8)
+  (instrument: \gendrify, cps: 02, dur: 10, freq: 4, melMul: 2, xNote: 15, kickMul: 1.25, delta: 8),
+  (instrument: \gendrify, cps: 02, dur: 10, freq: 4, melMul: 2, xNote: 14, kickMul: 1.25, delta: 8),
+  (instrument: \gendrify, cps: 02, dur: 10, freq: 4, melMul: 2, xNote: 12, kickMul: 1.25, delta: 8)
 ]).play;
 )
-
-// Scale.kurd
-// [ 0, 0, 2, 0, 0, 10, 0, 0, 16, 14, 20, 6 ]
-//
-// Scale.karjighar
-// [ 20, 0, 18, 0, 0, 6, 0, 0, 12, 10, 0, 3 ]
-//
-// Scale.yakahDesc
-// [ 18, 0, 0, 7, 4, 0, 14, 10, 0, 0, 20, 0 ]
-//
-// Scale.todi
-// [ 3, 0, 0, 7, 0, 6, 11, 8, 0, 0, 0, 1 ]
-//
-// Scale.yu
-// [ 10, 0, 0, 0, 0, 0, 3, 0, 0, 0, 5, 7 ]
-//
-// ScaleAD.nahawand
-// [ 0, 0, 4, 0, 0, 16, 0, 10, 0, 6, 22, 14 ]
