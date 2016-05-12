@@ -1,4 +1,4 @@
-TempoClock.default.tempo = 2;
+TempoClock.default.tempo = 1;
 
 (
 SynthDef.new(\tone, { |note1=62,note2=65,sustain=1,release=1,majMin=4,hiNote=74|
@@ -51,6 +51,7 @@ Pseq([
   (instrument: \tone, sustain: 1, note2: 67, delta: 1),
   (instrument: \tone, sustain: 2, note2: 65, delta: 2),
   (instrument: \tone, sustain: 1, note2: 64, delta: 1),
-  (instrument: \tone, sustain: 2, note2: 62, delta: 2)
+  (instrument: \tone, sustain: 2, note2: 62, delta: 2),
+  (instrument: \tone, sustain: 1, note2: 65, hiNote: 81, delta: 1),
 ], inf).play;
 )

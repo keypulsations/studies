@@ -17,12 +17,12 @@ SynthDef.new(\gendrify, {
   var gendy = Gendy3.ar(freq: 404, initCPs: cps);
   var env = Env.adsr(0.001, 0, 1, 0.5, curve: 0);
   var envGen = EnvGen.kr(env, gate, doneAction: 2);
-  var a,b,t,cycleA, cycleB;
+  var a,b,t,cycle;
   var kickGate,kickAmpEnv,kickFreqEnvM,kick,hatGate,hatAmpEnv,hatFreqEnvM,hat;
   var outBus=0, amp=0.3;
   var env1, env2, oscs1, noise, n, n2;
 
-  ~scale = [ 0, vNote, 3, 0, wNote, 0, 2, 0, xNote, 7, 0, 0 ] + 68;
+  ~scaleA = [ 0, vNote, 3, 0, wNote, 0, 2, 0, xNote, 7, 0, 0 ] + 68;
   cycle = ~scaleA.size * 0.5;
 
   a = SinOsc.ar(
@@ -116,8 +116,8 @@ Pseq([
   (instrument: \gendrify, cps: 24, dur: 10, freq: 4, melAMul: 2, xNote: 24, vNote: 24, wNote: 24, bpfMul: 0, melBMul: 1, kickMul: 0, hatMul: 0, delta: 8),
 
   (instrument: \gendrify, cps: 24, dur: 9, freq: 4, melAMul: 2, xNote: 31, vNote: 31, wNote: 31, bpfMul: 1.5, melBMul: 1, kickMul: 2, hatMul: 2, delta: 0),
+  (instrument: \gendrify, cps: 24, dur: 9, freq: 4, melAMul: 2, xNote: 27, vNote: 27, wNote: 27, bpfMul: 0, melBMul: 1, kickMul: 0, hatMul: 0, delta: 0),
   (instrument: \gendrify, cps: 24, dur: 10.75, freq: 4, melAMul: 3, bpfMul: 0, melBMul: 1, delta: 0),
-  (instrument: \gendrify, cps: 24, dur: 9, freq: 4, melAMul: 2, xNote: 27, vNote: 27, wNote: 27, bpfMul: 0, melBMul: 1, kickMul: 0, hatMul: 0, delta: 8),
 
 ]).play;
 
